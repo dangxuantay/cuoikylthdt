@@ -6,7 +6,12 @@ namespace Baicuoiky
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            QLNV ds = new QLNV();
+            ds.Hienthinv();
+            Nhanvien nhanviena = new Nhanvien();
+            Nhanvien nhanvienb = new Nhanvien();
+            nhanviena.hienthi();
+            Console.WriteLine();
         }
     }
 }
