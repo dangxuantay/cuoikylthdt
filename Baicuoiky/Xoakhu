@@ -1,0 +1,13 @@
+class Xoakhu:Khu
+    {
+        string xoa;
+        public void xoatenkhu()
+        {
+            Console.Write("Nhap ten khu can xoa: ");
+            xoa = Console.ReadLine();
+            if (xoa == Tenkhu)
+            {
+                Console.WriteLine("Ket qua: {0}", xoa);
+            }
+        }
+    }
