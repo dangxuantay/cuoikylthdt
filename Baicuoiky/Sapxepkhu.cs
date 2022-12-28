@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Baicuoiky
 {
-    class Sapxepthu : IComparer<Thu>
+    class Sapxepkhu : IComparer<Khu>
     {
-        public int Compare(Thu x, Thu y)
-        {            
-            return x.Idthu.CompareTo(y.Idthu);            
+        public int Compare(Khu x, Khu y)
+        {
+            return x.makhu.CompareTo(y.makhu);
         }
     }
 }

@@ -4,30 +4,16 @@ using System.Text;
 
 namespace Baicuoiky
 {
-    class QLThu : Dongvat
+    class QLThu : Thu
     {
-        List<Dongvat> dv = new List<Dongvat>();
-        public void Hienthithu()
-        {
-            foreach (Dongvat a in dv)
-            {
-                Console.WriteLine("Id thu: {0}", Idthu);
-                Console.WriteLine("Loai thu: {0}", Loai);
-                Console.WriteLine("Ten thu: {0}", Ten);
-                Console.WriteLine("Tuoi thu: {0}", tuoi);
-                Console.WriteLine("Ngay nuoi thu: {0}", Ngaynuoi);
-                Console.WriteLine("Nguon goc thu: {0}", Nguongoc);
-                Console.WriteLine("Suc khoe thu: {0}", Suckhoe);
-                Console.WriteLine("Cach di chuyen thu: {0}", Dichuyen);
-            }
-        }
+        List<Thu> dv = new List<Thu>();
         public void Nhapthu()
         {
             string trl;
-            Dongvat dvat;
+            Thu dvat;
             while (true)
             {
-                dvat = new Dongvat();
+                dvat = new Thu();
                 dvat.nhap();
                 dv.Add(dvat);
                 Console.Write("Ban muon nhap tiep thi nhan (y): ");
@@ -35,13 +21,25 @@ namespace Baicuoiky
                 if (trl != "y") break;
             }
         }
+        public void Hienthithu()
+        {
+            foreach (Thu a in dv)
+            {
+                Console.WriteLine("Id thu: {0}", a.Idthu);
+                Console.WriteLine("Loai thu: {0}", a.Loai);
+                Console.WriteLine("Ten thu: {0}", a.Ten);
+                Console.WriteLine("Tuoi thu: {0}", a.tuoi);
+                Console.WriteLine("Ngay nuoi thu: {0}", a.Ngaynuoi);
+                Console.WriteLine("Nguon goc thu: {0}", a.Nguongoc);
+                Console.WriteLine("Suc khoe thu: {0}", a.Suckhoe);
+                Console.WriteLine("Cach di chuyen thu: {0}", a.Dichuyen);
+            }
+        }
         public void Sapxepthu()
         {
             dv.Sort(new Sapxepthu());
         }
-        /*public void timkiem()
-        {
-            dv.Sort(new Timkiemthu());
-        }*/
+        
+        
     }
 }

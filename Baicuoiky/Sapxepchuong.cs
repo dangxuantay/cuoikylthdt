@@ -9,10 +9,7 @@ namespace Baicuoiky
     {
         public int Compare(Chuong x, Chuong y)
         {
-            int a = x.Tenchuong.CompareTo(y.Tenchuong);
-            if (a == 0)
-                return x.IDchuong.CompareTo(y.IDchuong);
-            return a;
+            return x.IDchuong.CompareTo(y.IDchuong);            
         }
     }
 }

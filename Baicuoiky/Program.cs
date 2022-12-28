@@ -6,7 +6,12 @@ namespace Baicuoiky
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            QLSothu A = new QLSothu();
+            A.Nhapthu();
+            A.Sapxepthu();  
+            A.Hienthithu();
+            A.timthu();
+
         }
     }
 }
