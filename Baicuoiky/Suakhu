@@ -1,0 +1,13 @@
+class Suakhu:Khu
+    {
+        string sua;
+        public void suatenkhu()
+        {
+            Console.Write("Nhap ten khu can sua: ");
+            sua = Console.ReadLine();
+            if (sua == Tenkhu)
+            {
+                Console.WriteLine("Ket qua: {0}", sua);
+            }
+        }
+    }
