@@ -1,0 +1,13 @@
+class Timkiemkhu:Khu
+    {
+        string tim;
+        public void timkiemtenkhu()
+        {
+            Console.Write("Nhap ten khu can tim: ");
+            tim = Console.ReadLine();
+            if (tim == Tenkhu)
+            {
+                Console.WriteLine("Ket qua: {0}", tim);
+            }
+        }
+    }
