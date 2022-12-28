@@ -1,0 +1,13 @@
+class Themkhu:Khu
+    {
+        string them;
+        public void themtenkhu()
+        {
+            Console.Write("Nhap ten khu can them: ");
+            them = Console.ReadLine();
+            if (them == Tenkhu)
+            {
+                Console.WriteLine("Ket qua: {0}", them);
+            }
+        }
+    }
