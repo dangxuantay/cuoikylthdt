@@ -2,8 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Baicuoiky
+namespace Baicuoiky    
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            QLKhu ds = new QLKhu();
+            ds.Hienthikhu();
+            Khu khuABC = new Khu();
+            khuABC.Nhap();
+            khuABC.Xuat();
+            Console.WriteLine();
+        }
+    }
+
+    
+    
     interface IKhu
     {
         int makhu { get; set; }
