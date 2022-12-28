@@ -1,0 +1,24 @@
+class Timkiemnhanvien:Nhanvien
+    {
+       
+       string tim;
+       public void tiemkiemten()
+       {
+            Console.Write("Nhap ten nhan vien can tim: ");
+            tim = Console.ReadLine();
+            if (tim == hoten)
+            {
+                Console.WriteLine("Ket qua: {0}", tim);
+            }
+       }
+        public void tiemkiemchucvu()
+        {
+            Console.Write("Nhap chuc vu nhan vien can tim: ");
+            tim = Console.ReadLine();
+            if (tim == chucvu)
+            {
+                Console.WriteLine("Ket qua: {0}", tim);
+            }
+        }
+
+    }
